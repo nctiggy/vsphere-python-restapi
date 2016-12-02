@@ -155,6 +155,7 @@ def print_short_detail_list(vm):
     fullData.update({"overallStatus": a.overallStatus})
     fullData.update({"powerState": a.runtime.powerState})
     fullData.update({"bootTime": a.runtime.bootTime})
+    fullData.update({"Datastore": vm.datastore[0].name})
 
     # Grab the tags from vm.config
     tags = {}
